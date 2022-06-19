@@ -9,23 +9,23 @@ import org.testng.Assert;
 /**
  * Test case name: Switched places for username and password
  * Status: Negative
- * Description: Logging in on a given form, providing incorrect username and correct password.
+ * Description: Logging in on a given form, providing correct username and correct, but shortened password (no "!" in the end).
  * Presetting: Go to site with URL = http://the-internet.herokuapp.com/login
  * Input data:
- *      username = "alex"
- *      password = "SuperSecretPassword!"
+ *      username = "tomsmith"
+ *      password = "SuperSecretPassword"
  * Test steps:
- *      1. Input "alex" to username field
- *      2. Input "SuperSecretPassword!" to password field
+ *      1. Input "tomsmith" to username field
+ *      2. Input "SuperSecretPassword" to password field
  *      3. Press button "Login"
  * Expected results: Staying on the page with URL http://the-internet.herokuapp.com/login
  **/
 
-public class LoginFailureIncorrectUsernameCorrectPassword {
+public class LoginFailureShortenedPassword {
     public static void main(String[] args){
         String loginUrl = "http://the-internet.herokuapp.com/login";
-        String username = "alex";
-        String password = "SuperSecretPassword!";
+        String username = "tomsmith";
+        String password = "SuperSecretPassword";
 
         WebDriver driver=new FirefoxDriver();
         driver.manage().window().maximize();

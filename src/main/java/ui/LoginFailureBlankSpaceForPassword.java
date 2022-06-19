@@ -9,23 +9,23 @@ import org.testng.Assert;
 /**
  * Test case name: Switched places for username and password
  * Status: Negative
- * Description: Logging in on a given form, providing incorrect username and incorrect password.
+ * Description: Logging in on a given form, providing correct username and a blank space for password.
  * Presetting: Go to site with URL = http://the-internet.herokuapp.com/login
  * Input data:
- *      username = "alex"
- *      password = "NoPassword!"
+ *      username = "tomsmith"
+ *      password = " "
  * Test steps:
- *      1. Input "alex" to username field
- *      2. Input "NoPassword!" to password field
+ *      1. Input "tomsmith" to username field
+ *      2. Input " " to password field
  *      3. Press button "Login"
  * Expected results: Staying on the page with URL http://the-internet.herokuapp.com/login
  **/
 
-public class LoginFailureIncorrectUsernameIncorrectPassword {
+public class LoginFailureBlankSpaceForPassword {
     public static void main(String[] args){
         String loginUrl = "http://the-internet.herokuapp.com/login";
-        String username = "alex";
-        String password = "NoPassword!";
+        String username = "tomsmith";
+        String password = " ";
 
         WebDriver driver=new FirefoxDriver();
         driver.manage().window().maximize();

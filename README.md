@@ -23,3 +23,19 @@ Each test includes comment section with a short description of the current test 
 Test itself is located in the **E2ERegisterLoginSuccess.java** file.
 
 # **Next possible steps for improvements:**
+
+Currently success/failure status for UI tests is set based on the actual page URL present in the end of the test: 
+- http://the-internet.herokuapp.com/login for failure
+- http://the-internet.herokuapp.com/secure for success
+
+This can be improved by adding checks of pop-up info messages, appearing after pressing "Login" button as well as adding checks for presence of specific elements of the page.
+
+Other complex cases can be added:
+-  providing SQL request in input fields;
+-  provoding scripts in input fields;
+-  providing html tags in input fields;
+-  providing non-standart symbols (such as smiley) in input fields;
+-  providing non-english letters in input fields;
+-  check available data length of the input firelds;
+-  check login features in different browsers;
+-  check simultanious logging in in several browsers/browser pages.

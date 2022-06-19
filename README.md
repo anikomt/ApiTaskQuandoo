@@ -1,15 +1,25 @@
 # Project
+
 Test task for Quandoo.
 
 # **Message to Quandoo team:**
+
+I would like to sincerely thank you for the given opportunity to show my skills.
+I enjoyed the time spent on executing the task and find it very usefull and educating for myself!
+I hope I will have the chance to talk to you in person and show my motivation 
 
 # **Selected technology stack:**
 
 - Java
 - Selenium
+- JUnit
 - TestNG
+- rest-assured
+- Jackson
 
 # **Reasons behind the chosen framework and pattern(s):**
+
+
 
 # **How to make the framework work and how to execute the test(s):**
 

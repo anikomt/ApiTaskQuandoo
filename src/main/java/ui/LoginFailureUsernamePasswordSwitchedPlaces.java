@@ -7,26 +7,25 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 /**
- * Test case name: Successful login
- * Status: Positive
- * Description: Logging in on a given form, providing correct data for username and password.
+ * Test case name: Switched places for username and password
+ * Status: Negative
+ * Description: Logging in on a given form, providing correct username filled in password field and correct password filled in username filed.
  * Presetting: Go to site with URL = http://the-internet.herokuapp.com/login
  * Input data:
- *      username = "tomsmith"
- *      password = "SuperSecretPassword!"
+ *      username = "SuperSecretPassword!"
+ *      password = "tomsmith"
  * Test steps:
- *      1. Input "tomsmith" to username field
- *      2. Input "SuperSecretPassword!" to password field
+ *      1. Input "SuperSecretPassword!" to username field
+ *      2. Input "tomsmith" to password field
  *      3. Press button "Login"
- * Expected results: Redirected to the page with URL http://the-internet.herokuapp.com/secure
+ * Expected results: Staying on the page with URL http://the-internet.herokuapp.com/login
  **/
 
-public class LoginSuccess {
+public class LoginFailureUsernamePasswordSwitchedPlaces {
     public static void main(String[] args){
         String loginUrl = "http://the-internet.herokuapp.com/login";
-        String loginSuccessUrl = "http://the-internet.herokuapp.com/secure";
-        String username = "tomsmith";
-        String password = "SuperSecretPassword!";
+        String username = "SuperSecretPassword!";
+        String password = "tomsmith";
 
         WebDriver driver=new FirefoxDriver();
         driver.manage().window().maximize();
@@ -42,6 +41,6 @@ public class LoginSuccess {
 
         String actualUrl = driver.getCurrentUrl();
 
-        Assert.assertEquals(loginSuccessUrl, actualUrl);
+        Assert.assertEquals(loginUrl, actualUrl);
     }
 }

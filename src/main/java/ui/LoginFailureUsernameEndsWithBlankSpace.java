@@ -7,25 +7,24 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 /**
- * Test case name: Successful login
- * Status: Positive
- * Description: Logging in on a given form, providing correct data for username and password.
+ * Test case name: Username starts with a blank space
+ * Status: Negative
+ * Description: Logging in on a given form, providing correct username ending with a blank space and correct password.
  * Presetting: Go to site with URL = http://the-internet.herokuapp.com/login
  * Input data:
- *      username = "tomsmith"
+ *      username = "tomsmith "
  *      password = "SuperSecretPassword!"
  * Test steps:
- *      1. Input "tomsmith" to username field
+ *      1. Input "tomsmith " to username field
  *      2. Input "SuperSecretPassword!" to password field
  *      3. Press button "Login"
- * Expected results: Redirected to the page with URL http://the-internet.herokuapp.com/secure
+ * Expected results: Staying on the page with URL http://the-internet.herokuapp.com/login
  **/
 
-public class LoginSuccess {
+public class LoginFailureUsernameEndsWithBlankSpace {
     public static void main(String[] args){
         String loginUrl = "http://the-internet.herokuapp.com/login";
-        String loginSuccessUrl = "http://the-internet.herokuapp.com/secure";
-        String username = "tomsmith";
+        String username = "tomsmith ";
         String password = "SuperSecretPassword!";
 
         WebDriver driver=new FirefoxDriver();
@@ -42,6 +41,6 @@ public class LoginSuccess {
 
         String actualUrl = driver.getCurrentUrl();
 
-        Assert.assertEquals(loginSuccessUrl, actualUrl);
+        Assert.assertEquals(loginUrl, actualUrl);
     }
 }

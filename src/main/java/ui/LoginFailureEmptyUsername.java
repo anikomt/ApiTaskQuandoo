@@ -13,10 +13,10 @@ import org.testng.Assert;
  * Presetting: Go to site with URL = http://the-internet.herokuapp.com/login
  * Input data:
  *      username is absent (empty input)
- *      password = SuperSecretPassword!
+ *      password = "SuperSecretPassword"
  * Test steps:
  *      1. Input empty data to username field
- *      2. Input SuperSecretPassword! to password field
+ *      2. Input "SuperSecretPassword!" to password field
  *      3. Press button "Login"
  * Expected results: Staying on the page with URL http://the-internet.herokuapp.com/login
  **/

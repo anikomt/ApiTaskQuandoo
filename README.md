@@ -1,2 +1,2 @@
-# ApiTaskQuandoo
-Test task for Quandoo: API task 
+# TestTaskQuandoo
+Test task for Quandoo

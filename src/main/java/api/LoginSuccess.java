@@ -1,3 +1,5 @@
+package api;
+
 public class LoginSuccess {
     private String token;
 

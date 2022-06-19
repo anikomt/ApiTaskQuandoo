@@ -1,3 +1,5 @@
+package api;
+
 public class Register {
     private String email;
     private String password;

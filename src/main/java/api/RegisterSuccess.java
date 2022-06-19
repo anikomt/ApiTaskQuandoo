@@ -1,3 +1,5 @@
+package api;
+
 public class RegisterSuccess {
     private Integer id;
     private String token;

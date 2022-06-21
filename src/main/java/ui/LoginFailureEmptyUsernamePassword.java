@@ -1,10 +1,9 @@
 package ui;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 
 /**
  * Test case name: Empty username & password fields
@@ -22,25 +21,20 @@ import org.testng.Assert;
  **/
 
 public class LoginFailureEmptyUsernamePassword {
-    public static void main(String[] args){
-        String loginUrl = "http://the-internet.herokuapp.com/login";
-        String username = "";
-        String password = "";
+    String loginUrl = "http://the-internet.herokuapp.com/login";
+    String username = "";
+    String password = "";
+    String expectedUrl = loginUrl;
 
-        WebDriver driver=new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.get(loginUrl);
+    WebDriver driver = new FirefoxDriver();
 
-        WebElement usernameElement = driver.findElement(By.xpath("//input[@name='username']"));
-        WebElement passwordElement = driver.findElement(By.xpath("//input[@name='password']"));
-        WebElement loginButtonElement = driver.findElement(By.xpath("//button[@type='submit']"));
+    @Test
+    public void test(){
+        InputLoginData.input(driver, loginUrl, username, password, expectedUrl);
+    }
 
-        usernameElement.sendKeys(username);
-        passwordElement.sendKeys(password);
-        loginButtonElement.click();
-
-        String actualUrl = driver.getCurrentUrl();
-
-        Assert.assertEquals(loginUrl, actualUrl);
+    @AfterMethod
+    public void closeBrowser(){
+        driver.quit();
     }
 }

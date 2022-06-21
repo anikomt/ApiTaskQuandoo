@@ -12,10 +12,10 @@ I hope I will have the chance to talk to you in person and show my motivation to
 Kindly note that as the UI task description says "_Design a test suite for **login functionality**_" I concentrated on implementing corresponding cases, meanwhile there are other page objects and functionality features (such as "Logout" button for example) that can be tested, so just let me know if those test cases should be implemented as well and I will add them.
 
 API task can also be implemented in different ways, so if it should be done in other way from what I've done, let me know as well, so I can change it.
-My solution uses following flow:
-- Use data of `GET` SINGLE USER request (`"email": "janet.weaver@reqres.in"`) as user email value for register/login requests.
-- Register user sending `POST` REGISTER - SUCCESSFUL request using `"email": "janet.weaver@reqres.in"` and save the returned token.
-- Log in user sending `POST` LOGIN - SUCCESSFUL request using `"email": "janet.weaver@reqres.in"` and save the returned token.
+My solution can be described by the following flow:
+- Use data of `GET` SINGLE USER request (`"email": "janet.weaver@reqres.in"`) as user email value for register/login requests;
+- Register user sending `POST` REGISTER - SUCCESSFUL request using `"email": "janet.weaver@reqres.in"` and save the returned token;
+- Log in user sending `POST` LOGIN - SUCCESSFUL request using `"email": "janet.weaver@reqres.in"` and save the returned token;
 - Compare that returned tokens from two previous steps are equal. 
 
 # **Selected technology stack:**

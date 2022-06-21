@@ -2,7 +2,7 @@
 
 Test task for Quandoo.
 
-# **Message to Quandoo team:**
+# **Message to Quandoo team**
 
 I would like to sincerely thank you for the given opportunity to show my skills.
 I enjoyed the time spent on executing the task and find it very usefull and educating for myself!
@@ -26,11 +26,11 @@ My solution can be described by the following flow:
 - TestNG
 - REST Assured
 
-# **Reasons behind the chosen framework and pattern(s):**
+# **Reasons behind the chosen framework and pattern(s)**
 
 I decided to use these technologies, because I'm more familier with them and need less time to complete the task, however I'm also able to re-write tests on Python insted of Java. 
 
-# **How to make the framework work and how to execute the test(s):**
+# **How to make the framework work and how to execute the test(s)**
 
 All the tests are located in **TestTaskQuandoo** repository, branch **master**.
 
@@ -42,7 +42,7 @@ Each test includes comment section with a short description of the current test 
 
 Test itself is located in the **E2ERegisterLoginSuccess.java** file.
 
-# **Next possible steps for improvements:**
+# **Next possible steps for improvements**
 
 Currently success/failure result status for UI tests is set based on the actual page URL open by the end of the test: 
 - http://the-internet.herokuapp.com/login URL for failure

@@ -52,11 +52,11 @@ This can be improved by adding checks of pop-up info messages, appearing after p
 
 Other complex test cases can be added:
 -  providing SQL request in input fields;
--  provoding scripts in input fields;
+-  providing scripts in input fields;
 -  providing html tags in input fields;
 -  providing non-standart symbols (such as smiley) in input fields;
 -  providing non-english letters in input fields;
--  check available data length of the input firelds;
+-  check available data length of the input fields;
 -  check login features in different browsers;
 -  check simultanious logging in in several browsers/browser pages.
 

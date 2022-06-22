@@ -6,7 +6,7 @@ Test task for Quandoo.
 
 I would like to sincerely thank you for the given opportunity to show my skills.
 I enjoyed the time spent on executing the task and find it very usefull and educating for myself!
-I read more into autromation testing and tried different approaches to complete the task in a better way, however I understand it is still not perfect, so **I would really appreciate if you provide me tips and comments on how to improve my work.**
+I read more into automation testing and tried different approaches to complete the task in a better way, however I understand it is still not perfect, so **I would really appreciate if you provide me tips and comments on how to improve my work.**
 I hope I will have a chance to talk to you in person and show my motivation to work in Quandoo!
 
 Kindly note that as the UI task description says "_Design a test suite for **login functionality**_" I concentrated on implementing corresponding test cases, meanwhile there are other page objects and functionality features (such as "Logout" button for example) that can be tested, so just let me know if those test cases should be implemented as well and I will add them.
@@ -28,7 +28,7 @@ My solution can be described by the following flow:
 
 # **Reasons behind the chosen framework and pattern(s)**
 
-I decided to use these technologies, because I'm more familier with them and need less time to complete the task, however I'm also able to re-write tests on Python insted of Java. For simple tests these technologies are fitting good, but for more complex tasks necessity of using other technologies should be considered, in terms of usability and optimisation, for example.
+I decided to use these technologies, because I'm more familiar with them and need less time to complete the task, however I'm also able to re-write tests on Python instead of Java. For simple tests these technologies are fitting good, but for more complex tasks necessity of using other technologies should be considered, in terms of usability and optimisation, for example.
 
 # **How to make the framework work and how to execute the test(s)**
 

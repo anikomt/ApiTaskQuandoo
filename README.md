@@ -56,7 +56,7 @@ Other complex test cases can be added:
 -  providing html tags in input fields;
 -  providing non-standart symbols (such as smiley) in input fields;
 -  providing non-english letters in input fields;
--  check available data length of the input firelds;
+-  check available data length of the input fields;
 -  check login features in different browsers;
 -  check simultanious logging in in several browsers/browser pages.
 
